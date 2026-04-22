@@ -59,7 +59,7 @@ local formationDefinitions = {
     ["line"] = {
 		name = "line",
 		positions = {
-			[1]  = {0,0},		[2]  = {1,1},		[3]  = {0,-1},		[4]  = {0,2},		[5]  = {0,-2},
+			[1]  = {0,0},		[2]  = {0,1},		[3]  = {0,-1},		[4]  = {0,2},		[5]  = {0,-2},
 			[6]  = {0,3},		[7]  = {0,-3},		[8]  = {0,4},		[9]  = {0,-4},	    [10] = {0,5},
 			[11] = {0,-5},	    [12] = {0,6},	    [13] = {0,-6},	    [14] = {0,7},		[15] = {0,-7},
 			[16] = {0,8},		[17] = {0,-8},		[18] = {0,9},	    [19] = {0,-9},		[20] = {0,10},
@@ -68,7 +68,7 @@ local formationDefinitions = {
 		},
 		generated = false,
 		defaults = {
-			spacing = Vec3(0, 0, 30),
+			spacing = Vec3(30, 1, 30),
 			hillyCoeficient = 30,
 			constrained = true,
 			variant = false,

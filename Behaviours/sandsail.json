@@ -1,35 +1,5 @@
 {
-	"additionalNodes": [ {
-		"children": [],
-		"id": "68KgxtrhBxiVWLxxdCP8tcQLaGBHNhgW",
-		"nodeType": "luaCommand",
-		"parameters": [ {
-			"name": "var",
-			"value": "heading"
-		}, {
-			"name": "value",
-			"value": "Spring.GetUnitHeading(units[1])"
-		}, {
-			"name": "scriptName",
-			"value": "store"
-		} ],
-		"scriptName": "store"
-	}, {
-		"children": [],
-		"id": "G3UWRfM38er2FNdB3C7ENYCyeVDZElQ6",
-		"nodeType": "luaCommand",
-		"parameters": [ {
-			"name": "dist",
-			"value": "{x = windData.dirX * 20, z = windData.dirZ * 20}"
-		}, {
-			"name": "fight",
-			"value": "false"
-		}, {
-			"name": "scriptName",
-			"value": "Common.relativeMove"
-		} ],
-		"scriptName": "Common.relativeMove"
-	} ],
+	"additionalNodes": [],
 	"additionalParameters": {
 		"root": {
 			"height": 88,
@@ -43,50 +13,50 @@
 			"height": 94,
 			"title": "store",
 			"width": 159,
-			"x": 1004,
+			"x": 1018,
 			"y": -123
-		},
-		"1hBLffoPloRPK8q2x1iHUh6Jc5Tl8L9H": {
-			"height": 76,
-			"title": "echo",
-			"width": 179,
-			"x": 1810,
-			"y": 475
 		},
 		"5ugSR5GnoUtxhSsLE9PSY5UqL1k0hwXA": {
 			"height": 54,
 			"title": "sequence",
 			"width": 143,
-			"x": 770,
+			"x": 778,
 			"y": 12
-		},
-		"68KgxtrhBxiVWLxxdCP8tcQLaGBHNhgW": {
-			"height": 94,
-			"title": "store",
-			"width": 286,
-			"x": 2392,
-			"y": -100
 		},
 		"9ilDyzfFuOZP1zxfcN2M8XkyFYLTBJa8": {
 			"height": 94,
 			"title": "store",
-			"width": 571,
+			"width": 631,
+			"x": 1801,
+			"y": -251
+		},
+		"9t2FsyT9u0zTmUbX9uLpEQmCL7AlXNIT": {
+			"height": 101,
+			"title": "store",
+			"width": 131,
 			"x": 1808,
-			"y": -228
+			"y": -661
 		},
 		"BLiW3wa6fUhNSx0nUTd14Aj5SGCPHobf": {
 			"height": 101,
 			"title": "store",
 			"width": 131,
-			"x": 1806,
-			"y": -47
+			"x": 1807,
+			"y": -46
 		},
 		"D03QMboylVl0AyP4HBuTxdeWw11j0GkT": {
 			"height": 94,
 			"title": "store",
 			"width": 361,
-			"x": 1810,
+			"x": 1811,
 			"y": 376
+		},
+		"DTLcGJW0GA01Ht7IHS9QMGbvcUkdpaGN": {
+			"height": 94,
+			"title": "store",
+			"width": 401,
+			"x": 1801,
+			"y": -155
 		},
 		"DkSLBRvqQhNJm96IISdyudSthOqeD0gH": {
 			"height": 60,
@@ -98,22 +68,15 @@
 		"EAccNaXboJq0bBZHaYmUoiIPEvWruZ2z": {
 			"height": 132,
 			"title": "formation.moveCustomGroup",
-			"width": 269,
-			"x": 1813,
-			"y": 560
-		},
-		"G3UWRfM38er2FNdB3C7ENYCyeVDZElQ6": {
-			"height": 90,
-			"title": "Common.relativeMove",
-			"width": 388,
-			"x": 2355,
-			"y": 57
+			"width": 303,
+			"x": 1807,
+			"y": 490
 		},
 		"HkCBxgqum1ApkiVFtT5Eb2fFIuvWoAft": {
 			"height": 70,
 			"title": "roleSplit",
 			"width": 202,
-			"x": 996,
+			"x": 1010,
 			"y": 81
 		},
 		"KuuatXJVIREVysfngUXLsAi5XSa36ee0": {
@@ -121,77 +84,70 @@
 			"title": "store",
 			"width": 141,
 			"x": 1808,
-			"y": -439
+			"y": -555
 		},
 		"N1y4pwUJkVq4lLsH3eSbUilfWAj3LtrU": {
 			"height": 60,
-			"title": "sequence",
+			"title": "maverick",
 			"width": 143,
-			"x": 1574,
-			"y": -81
+			"x": 1581,
+			"y": -32
 		},
 		"QUF4AdiTSePToCE8wIIqo8NahZVvjK59": {
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 509,
+			"x": 510,
 			"y": 10
 		},
 		"aLMzbbTia1boC3XBjAL6k4Ntf23lAx82": {
 			"height": 72,
 			"title": "waitUntil",
 			"width": 217,
-			"x": 1811,
+			"x": 1812,
 			"y": 200
 		},
 		"alHT5UNZx7oQgwY2P68BtI1BS2XuVmJn": {
 			"height": 94,
 			"title": "store",
 			"width": 365,
-			"x": 510,
-			"y": -127
+			"x": 504,
+			"y": -135
 		},
 		"bHKP7FnX7mNuGSs5ZL6lGfOPWQIR7KDa": {
 			"height": 94,
 			"title": "store",
-			"width": 471,
-			"x": 1810,
-			"y": -343
-		},
-		"czPHiM8e4Gvq2YMluH7bryc2A1TGSPcn": {
-			"height": 92,
-			"title": "store",
-			"width": 131,
-			"x": 1804,
-			"y": -544
+			"width": 190,
+			"x": 1803,
+			"y": -458
 		},
 		"fuTrFmJ6zRhwABvSnK8GOTllyYPphm2K": {
 			"height": 90,
 			"title": "Common.move",
 			"width": 198,
-			"x": 1807,
+			"x": 1808,
 			"y": 61
 		},
 		"ixSIL1mzXf5UnqBWCWWqUEi6VJ5mXc52": {
 			"height": 60,
-			"title": "sequence",
-			"width": 143,
-			"x": 1576,
+			"title": "peewees (other units can be added to role)",
+			"width": 361,
+			"x": 1341,
 			"y": 289
 		},
 		"p8Tc9sb9VIkJs93gMlW52Yhc8XO37qQt": {
 			"height": 94,
 			"title": "store",
-			"width": 786,
-			"x": 1811,
+			"width": 1072,
+			"x": 1812,
 			"y": 277
 		},
-		"u6Q7Ccrjx1DxtOx7n3Q4TwUYCTJWqqqK": {
-			"height": 94,
+		"tZVadANZ7Jf12y1TOT2cbJz4xL9n8a0S": {
+			"height": 92,
 			"title": "store",
-			"width": 554,
-			"x": 1808,
-			"y": -135
+			"width": 131,
+			"x": 1803,
+			"y": -354
 		}
 	},
 	"roles": [ {
@@ -238,7 +194,7 @@
 					"children": [ {
 						"children": [ {
 							"children": [],
-							"id": "czPHiM8e4Gvq2YMluH7bryc2A1TGSPcn",
+							"id": "9t2FsyT9u0zTmUbX9uLpEQmCL7AlXNIT",
 							"nodeType": "luaCommand",
 							"parameters": [ {
 								"name": "var",
@@ -283,14 +239,14 @@
 							"scriptName": "store"
 						}, {
 							"children": [],
-							"id": "9ilDyzfFuOZP1zxfcN2M8XkyFYLTBJa8",
+							"id": "tZVadANZ7Jf12y1TOT2cbJz4xL9n8a0S",
 							"nodeType": "luaCommand",
 							"parameters": [ {
 								"name": "var",
-								"value": "maverickTargetPos"
+								"value": "stepSize"
 							}, {
 								"name": "value",
-								"value": "maverickPos + Vec3(windData.normDirX * 200, 0, windData.normDirZ  * 200)"
+								"value": "50"
 							}, {
 								"name": "scriptName",
 								"value": "store"
@@ -298,14 +254,29 @@
 							"scriptName": "store"
 						}, {
 							"children": [],
-							"id": "u6Q7Ccrjx1DxtOx7n3Q4TwUYCTJWqqqK",
+							"id": "9ilDyzfFuOZP1zxfcN2M8XkyFYLTBJa8",
 							"nodeType": "luaCommand",
 							"parameters": [ {
 								"name": "var",
-								"value": "heading"
+								"value": "maverickTargetPos"
 							}, {
 								"name": "value",
-								"value": "Spring.GetHeadingFromVector(windData.normDirX, windData.normDirZ)"
+								"value": "maverickPos + Vec3(windData.normDirX * stepSize, 0, windData.normDirZ  * stepSize)"
+							}, {
+								"name": "scriptName",
+								"value": "store"
+							} ],
+							"scriptName": "store"
+						}, {
+							"children": [],
+							"id": "DTLcGJW0GA01Ht7IHS9QMGbvcUkdpaGN",
+							"nodeType": "luaCommand",
+							"parameters": [ {
+								"name": "var",
+								"value": "windDirPerp"
+							}, {
+								"name": "value",
+								"value": "Vec3(-windData.normDirZ, 0, windData.normDirX)"
 							}, {
 								"name": "scriptName",
 								"value": "store"
@@ -364,10 +335,10 @@
 							"nodeType": "luaCommand",
 							"parameters": [ {
 								"name": "var",
-								"value": "relativeFormation"
+								"value": "rotatedFormation"
 							}, {
 								"name": "value",
-								"value": "formation.StaticTransform(lineFormation.positions, heading, nil, lineFormation.defaults.spacing)"
+								"value": "formation.StaticTransform(lineFormation.positions, windDirPerp, Vec3(0,0,0), lineFormation.defaults.spacing)"
 							}, {
 								"name": "scriptName",
 								"value": "store"
@@ -382,24 +353,12 @@
 								"value": "formationGroup"
 							}, {
 								"name": "value",
-								"value": "nota_dolezafi_hlaa2026.Group(maverickID)"
+								"value": "nota_dolezafi_hlaa2026.Group(units)"
 							}, {
 								"name": "scriptName",
 								"value": "store"
 							} ],
 							"scriptName": "store"
-						}, {
-							"children": [],
-							"id": "1hBLffoPloRPK8q2x1iHUh6Jc5Tl8L9H",
-							"nodeType": "luaCommand",
-							"parameters": [ {
-								"name": "msg",
-								"value": "formationGroup"
-							}, {
-								"name": "scriptName",
-								"value": "echo"
-							} ],
-							"scriptName": "echo"
 						}, {
 							"children": [],
 							"id": "EAccNaXboJq0bBZHaYmUoiIPEvWruZ2z",
@@ -412,7 +371,7 @@
 								"value": "maverickTargetPos"
 							}, {
 								"name": "formation",
-								"value": "relativeFormation"
+								"value": "rotatedFormation"
 							}, {
 								"name": "fight",
 								"value": "false"

@@ -14,19 +14,15 @@ function getInfo()
 	}
 end
 
-return function(leaderID)
-    local groupMap = {}
-    local index = 1
-	groupMap[leaderID] = 1 	-- should work without this since I'm using Roles
-							-- but for some reason leader then shares
-							-- the same place with peewee on index = 2
-
-    for _, unitID in ipairs(units) do
-        if unitID ~= leaderID then
-            groupMap[unitID] = index
-            index = index + 1
+return function(otherUnits)
+	local group = {}
+	
+	for i=1, #otherUnits do
+		local unitID = otherUnits[i]
+        if unitID ~= nil then
+    		group[unitID] = i
         end
-    end
-
-    return groupMap
+	end
+	
+	return group
 end
