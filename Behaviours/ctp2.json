@@ -1,0 +1,294 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 88,
+			"width": 180
+		}
+	},
+	"inputs": [],
+	"outputs": [],
+	"properties": {
+		"3IwV3UxUO3RiBzeoyBlwVEMMoRGLwAQT": {
+			"height": 94,
+			"title": "store",
+			"width": 198,
+			"x": 1217,
+			"y": -219
+		},
+		"627ff6tRMkQaMZg8HAvhQIu6AkM7aKBv": {
+			"height": 60,
+			"title": "tank",
+			"width": 153,
+			"x": 1131,
+			"y": 382
+		},
+		"8Pe0SURfp8B1oOdwVNfl5XbafqyctlZB": {
+			"height": 70,
+			"title": "roleSplit",
+			"width": 202,
+			"x": 871,
+			"y": 53
+		},
+		"BPjrLNOwmyxuSrFv12DqukazXqC9LZBf": {
+			"height": 70,
+			"title": "parallel",
+			"width": 202,
+			"x": 608,
+			"y": 6
+		},
+		"O50ftyzD3u9xKcsBGH1WVZCrMXAoK7S3": {
+			"height": 54,
+			"title": "nota_common.manualMissionEnd",
+			"width": 296,
+			"x": 1614,
+			"y": -115
+		},
+		"QAZWLlTv4kufJi455iKAC1oskmnjTrf6": {
+			"height": 60,
+			"title": "strongUnits",
+			"width": 153,
+			"x": 1125,
+			"y": 166
+		},
+		"ZBfxl5eEpMenwg1ZvUAX73uknLI0LL9M": {
+			"height": 90,
+			"title": "Common.move",
+			"width": 483,
+			"x": 1362,
+			"y": 371
+		},
+		"a2xNWHp3g1fGNBgURty38lk5orSRl0ye": {
+			"height": 90,
+			"title": "Common.move",
+			"width": 240,
+			"x": 1368,
+			"y": 266
+		},
+		"aHvNgF4njnR8DXue4x2Etti3wqHpGaV6": {
+			"height": 72,
+			"title": "wait",
+			"width": 131,
+			"x": 1367,
+			"y": 162
+		},
+		"bXLaem1vpLnl1nqTxeage0zUcwlQO0dc": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 367,
+			"x": 1215,
+			"y": -81
+		},
+		"cVDmvbe3w4wBt3pfb786sbhI6J6MeD9S": {
+			"height": 95,
+			"title": "get hill positions",
+			"width": 330,
+			"x": 483,
+			"y": -131
+		},
+		"hWNvWca1ZHzVr9NwXtY6VZfIyPpDczj2": {
+			"height": 72,
+			"title": "nota_dolezafi_hlaa2026.MoveToPositions",
+			"width": 326,
+			"x": 1451,
+			"y": 53
+		},
+		"mFZ2o1TI5NVZ4HDs8cHuzAg9b75UFWu7": {
+			"height": 54,
+			"title": "success",
+			"width": 132,
+			"x": 1616,
+			"y": -21
+		},
+		"n05bU0eImAlMXxbe9J2e99EQ19w5MXVj": {
+			"height": 60,
+			"title": "weakUnits - conquer safe hills",
+			"width": 270,
+			"x": 1124,
+			"y": 57
+		},
+		"rxUef4ewOlh99Lf911uluGHiUda9IQ9c": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 272,
+			"y": 10
+		},
+		"spTMJLeNOrHm0NSd8YO9kkYRX4jdJwFI": {
+			"height": 60,
+			"title": "sensors",
+			"width": 143,
+			"x": 1025,
+			"y": -142
+		},
+		"t7FiTkLsaJYAY2RFUnB3SuYq00yDGDg1": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 866,
+			"y": -142
+		}
+	},
+	"roles": [ {
+		"categories": [ "nota_dolezafi_hlaa2026.Peewees" ],
+		"name": "Weak"
+	}, {
+		"categories": [ "nota_kyzro_ctp2.Warrior" ],
+		"name": "Strong"
+	}, {
+		"categories": [ "nota_kyzro_ctp2.Bear" ],
+		"name": "Tank"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [],
+			"id": "cVDmvbe3w4wBt3pfb786sbhI6J6MeD9S",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "hills"
+			}, {
+				"name": "value",
+				"value": "nota_kyzro_ctp2.GetAllHills(190, 400)"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [ {
+				"children": [ {
+					"children": [ {
+						"children": [],
+						"id": "3IwV3UxUO3RiBzeoyBlwVEMMoRGLwAQT",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "var",
+							"value": "info"
+						}, {
+							"name": "value",
+							"value": "core.MissionInfo()"
+						}, {
+							"name": "scriptName",
+							"value": "store"
+						} ],
+						"scriptName": "store"
+					}, {
+						"children": [ {
+							"children": [],
+							"id": "O50ftyzD3u9xKcsBGH1WVZCrMXAoK7S3",
+							"nodeType": "luaCommand",
+							"parameters": [ {
+								"name": "scriptName",
+								"value": "nota_common.manualMissionEnd"
+							} ],
+							"scriptName": "nota_common.manualMissionEnd"
+						}, {
+							"children": [],
+							"id": "mFZ2o1TI5NVZ4HDs8cHuzAg9b75UFWu7",
+							"nodeType": "success",
+							"parameters": []
+						} ],
+						"id": "bXLaem1vpLnl1nqTxeage0zUcwlQO0dc",
+						"nodeType": "luaCondition",
+						"parameters": [ {
+							"name": "expression",
+							"value": "nota_dolezafi_hlaa2026.CTPAllGoalsSatisfied(info)"
+						}, {
+							"name": "repeat",
+							"value": "false"
+						} ]
+					} ],
+					"id": "spTMJLeNOrHm0NSd8YO9kkYRX4jdJwFI",
+					"nodeType": "sequence",
+					"parameters": []
+				} ],
+				"id": "t7FiTkLsaJYAY2RFUnB3SuYq00yDGDg1",
+				"nodeType": "repeat",
+				"parameters": []
+			}, {
+				"children": [ {
+					"children": [ {
+						"children": [],
+						"id": "hWNvWca1ZHzVr9NwXtY6VZfIyPpDczj2",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "positions",
+							"value": "hills"
+						}, {
+							"name": "scriptName",
+							"value": "nota_dolezafi_hlaa2026.MoveToPositions"
+						} ],
+						"scriptName": "nota_dolezafi_hlaa2026.MoveToPositions"
+					} ],
+					"id": "n05bU0eImAlMXxbe9J2e99EQ19w5MXVj",
+					"nodeType": "sequence",
+					"parameters": []
+				}, {
+					"children": [ {
+						"children": [],
+						"id": "aHvNgF4njnR8DXue4x2Etti3wqHpGaV6",
+						"nodeType": "wait",
+						"parameters": [ {
+							"name": "time",
+							"value": 10
+						} ]
+					}, {
+						"children": [],
+						"id": "a2xNWHp3g1fGNBgURty38lk5orSRl0ye",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "pos",
+							"value": "{x = hills[4].x, z = hills[4].z}"
+						}, {
+							"name": "fight",
+							"value": "true"
+						}, {
+							"name": "scriptName",
+							"value": "Common.move"
+						} ],
+						"scriptName": "Common.move"
+					} ],
+					"id": "QAZWLlTv4kufJi455iKAC1oskmnjTrf6",
+					"nodeType": "sequence",
+					"parameters": []
+				}, {
+					"children": [ {
+						"children": [],
+						"id": "ZBfxl5eEpMenwg1ZvUAX73uknLI0LL9M",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "pos",
+							"value": "{x = info.enemyPositions[1].x - 200, z = info.enemyPositions[1].z}"
+						}, {
+							"name": "fight",
+							"value": "true"
+						}, {
+							"name": "scriptName",
+							"value": "Common.move"
+						} ],
+						"scriptName": "Common.move"
+					} ],
+					"id": "627ff6tRMkQaMZg8HAvhQIu6AkM7aKBv",
+					"nodeType": "sequence",
+					"parameters": []
+				} ],
+				"id": "8Pe0SURfp8B1oOdwVNfl5XbafqyctlZB",
+				"nodeType": "roleSplit",
+				"parameters": [ {
+					"name": "mode",
+					"value": "all-success"
+				} ]
+			} ],
+			"id": "BPjrLNOwmyxuSrFv12DqukazXqC9LZBf",
+			"nodeType": "parallel",
+			"parameters": [ {
+				"name": "mode",
+				"value": "all-success"
+			} ]
+		} ],
+		"id": "rxUef4ewOlh99Lf911uluGHiUda9IQ9c",
+		"nodeType": "sequence",
+		"parameters": []
+	}
+}
