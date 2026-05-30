@@ -1,0 +1,229 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 148,
+			"width": 242
+		}
+	},
+	"inputs": [ {
+		"command": "Variable",
+		"name": "transporter"
+	}, {
+		"command": "Variable",
+		"name": "rescuee"
+	}, {
+		"command": "BETS_AREA",
+		"name": "clearPathArea"
+	} ],
+	"outputs": [],
+	"properties": {
+		"0MPRIjzM6TaiQoTpPQRANlwQZz8ZRis9": {
+			"height": 92,
+			"title": "nota_dolezafi_hlaa2026.UnloadUnit",
+			"width": 287,
+			"x": 851,
+			"y": 316
+		},
+		"3OUx5ZRyOIfkbm5qNbX35KKw0mNF4PdX": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 273,
+			"x": 300,
+			"y": 20
+		},
+		"I8lLyR8DGFA8jvVNEEOKxhabMxI9hXbR": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 648,
+			"y": 31
+		},
+		"RvgbbrTvo2rVQ5lf3Z9cq1OSfcri9mT3": {
+			"height": 54,
+			"title": "success",
+			"width": 132,
+			"x": 1397,
+			"y": 135
+		},
+		"XkxkPv0kagqV11fZGWrUMbFuO60E6OlL": {
+			"height": 92,
+			"title": "nota_dolezafi_hlaa2026.LoadUnit",
+			"width": 274,
+			"x": 854,
+			"y": 19
+		},
+		"ZMh9fREQKfoTC64Z3ik6X2ZN95FVaVnJ": {
+			"height": 132,
+			"title": "nota_dolezafi_hlaa2026.FollowPath - Go Back",
+			"width": 355,
+			"x": 1392,
+			"y": 216
+		},
+		"bPO1JK8fBG0H4Cud0q8rZaOWiK4N0efM": {
+			"height": 54,
+			"title": "success",
+			"width": 132,
+			"x": 1418,
+			"y": -174
+		},
+		"i2MikIUl7vSEIU9Jd1kcTbMBU7YP3y54": {
+			"height": 132,
+			"title": "nota_dolezafi_hlaa2026.FollowPath - Go To unit",
+			"width": 368,
+			"x": 1416,
+			"y": -95
+		},
+		"wWJkC6rReeuqywu0RpMVrqbmAQQbYd1u": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 463,
+			"x": 855,
+			"y": 173
+		},
+		"wZIUtXBWMclBEBgbPPZnK8EXBjvB4rkh": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 463,
+			"x": 854,
+			"y": -135
+		},
+		"zgyPqkoyfdZQXGjs9eckHh5woscFgJfc": {
+			"height": 54,
+			"title": "failure",
+			"width": 131,
+			"x": 647,
+			"y": 107
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [ {
+				"children": [ {
+					"children": [],
+					"id": "bPO1JK8fBG0H4Cud0q8rZaOWiK4N0efM",
+					"nodeType": "success",
+					"parameters": []
+				}, {
+					"children": [],
+					"id": "i2MikIUl7vSEIU9Jd1kcTbMBU7YP3y54",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "unitID",
+						"value": "transporter"
+					}, {
+						"name": "path",
+						"value": "bb.pathsToUnits[rescuee]"
+					}, {
+						"name": "reversed",
+						"value": "false"
+					}, {
+						"name": "tolerance",
+						"value": "50"
+					}, {
+						"name": "scriptName",
+						"value": "nota_dolezafi_hlaa2026.FollowPath"
+					} ],
+					"scriptName": "nota_dolezafi_hlaa2026.FollowPath"
+				} ],
+				"id": "wZIUtXBWMclBEBgbPPZnK8EXBjvB4rkh",
+				"nodeType": "luaCondition",
+				"parameters": [ {
+					"name": "expression",
+					"value": "nota_dolezafi_hlaa2026.IsUnitInsideArea(rescuee, clearPathArea)"
+				}, {
+					"name": "repeat",
+					"value": "false"
+				} ]
+			}, {
+				"children": [],
+				"id": "XkxkPv0kagqV11fZGWrUMbFuO60E6OlL",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "transporter",
+					"value": "transporter"
+				}, {
+					"name": "unit",
+					"value": "rescuee"
+				}, {
+					"name": "scriptName",
+					"value": "nota_dolezafi_hlaa2026.LoadUnit"
+				} ],
+				"scriptName": "nota_dolezafi_hlaa2026.LoadUnit"
+			}, {
+				"children": [ {
+					"children": [],
+					"id": "RvgbbrTvo2rVQ5lf3Z9cq1OSfcri9mT3",
+					"nodeType": "success",
+					"parameters": []
+				}, {
+					"children": [],
+					"id": "ZMh9fREQKfoTC64Z3ik6X2ZN95FVaVnJ",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "unitID",
+						"value": "transporter"
+					}, {
+						"name": "path",
+						"value": "bb.pathsToUnits[rescuee]"
+					}, {
+						"name": "reversed",
+						"value": "true"
+					}, {
+						"name": "tolerance",
+						"value": "50"
+					}, {
+						"name": "scriptName",
+						"value": "nota_dolezafi_hlaa2026.FollowPath"
+					} ],
+					"scriptName": "nota_dolezafi_hlaa2026.FollowPath"
+				} ],
+				"id": "wWJkC6rReeuqywu0RpMVrqbmAQQbYd1u",
+				"nodeType": "luaCondition",
+				"parameters": [ {
+					"name": "expression",
+					"value": "nota_dolezafi_hlaa2026.IsUnitInsideArea(rescuee, clearPathArea)"
+				}, {
+					"name": "repeat",
+					"value": "false"
+				} ]
+			}, {
+				"children": [],
+				"id": "0MPRIjzM6TaiQoTpPQRANlwQZz8ZRis9",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "transporter",
+					"value": "transporter"
+				}, {
+					"name": "unit",
+					"value": "rescuee"
+				}, {
+					"name": "scriptName",
+					"value": "nota_dolezafi_hlaa2026.UnloadUnit"
+				} ],
+				"scriptName": "nota_dolezafi_hlaa2026.UnloadUnit"
+			} ],
+			"id": "I8lLyR8DGFA8jvVNEEOKxhabMxI9hXbR",
+			"nodeType": "sequence",
+			"parameters": []
+		}, {
+			"children": [],
+			"id": "zgyPqkoyfdZQXGjs9eckHh5woscFgJfc",
+			"nodeType": "failure",
+			"parameters": []
+		} ],
+		"id": "3OUx5ZRyOIfkbm5qNbX35KKw0mNF4PdX",
+		"nodeType": "luaCondition",
+		"parameters": [ {
+			"name": "expression",
+			"value": "transporter ~= nil and rescuee ~= nil"
+		}, {
+			"name": "repeat",
+			"value": "false"
+		} ]
+	}
+}
