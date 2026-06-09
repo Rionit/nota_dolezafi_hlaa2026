@@ -496,7 +496,7 @@
 		"categories": [ "nota_dolezafi_hlaa2026.atlases" ],
 		"name": "atlases"
 	}, {
-		"categories": [],
+		"categories": [ "nota_dolezafi_hlaa2026.ttdr-others" ],
 		"name": "others"
 	} ],
 	"root": {
