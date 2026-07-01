@@ -1,0 +1,498 @@
+{
+	"additionalNodes": [ {
+		"children": [ {
+			"children": [],
+			"id": "zKPFJLvHyaQBml39dxEtYOe0f4TivgA0",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "unitName",
+				"value": "'armspy'"
+			}, {
+				"name": "scriptName",
+				"value": "nota_dolezafi_hlaa2026.BuyUnit"
+			} ],
+			"scriptName": "nota_dolezafi_hlaa2026.BuyUnit"
+		} ],
+		"id": "r9lK9FOkrgFbyEwDZ3uGSMMBeQE8Rk4B",
+		"nodeType": "luaCondition",
+		"parameters": [ {
+			"name": "expression",
+			"value": "#bb.units.infiltrators < 1 and GetMetal() >= bb.missionInfo.buy.armspy"
+		}, {
+			"name": "repeat",
+			"value": "false"
+		} ]
+	} ],
+	"additionalParameters": {
+		"root": {
+			"height": 108,
+			"width": 242
+		}
+	},
+	"inputs": [],
+	"outputs": [],
+	"properties": {
+		"4irfLfH8sVCs8gAmUELApkoha3FMEvJy": {
+			"height": 88,
+			"title": "luaCondition",
+			"width": 205,
+			"x": 1166,
+			"y": 285
+		},
+		"8BUq5lVFYMEmcsBf9Zi7fd9q9AkNslfH": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 1568,
+			"y": 295
+		},
+		"9C3sVf5Xt3KuPkoTxLjzXinkGcTwzW63": {
+			"height": 74,
+			"title": "waitUntil",
+			"width": 378,
+			"x": 1769,
+			"y": 11
+		},
+		"Boule0wJlw7PSS768sK0DpYIgDOJcRYH": {
+			"height": 72,
+			"title": "nota_dolezafi_hlaa2026.BuyUnit",
+			"width": 266,
+			"x": 1888,
+			"y": 1203
+		},
+		"CU1Yot5nwqI1yfW1iEIN0GzUZLXytvGX": {
+			"height": 88,
+			"title": "luaCondition",
+			"width": 203,
+			"x": 1169,
+			"y": 6
+		},
+		"DLWBQEukFuNp8a4cvlj9u81PRjaZQd38": {
+			"height": 70,
+			"title": "selector",
+			"width": 131,
+			"x": 892,
+			"y": 13
+		},
+		"GoXz50qofN9vsXryMksDloDo6aC71Qad": {
+			"height": 88,
+			"title": "luaCondition",
+			"width": 204,
+			"x": 1167,
+			"y": 516
+		},
+		"K7T0Lxs7Wg79wJkHUDYZwRvIt2vfZZqP": {
+			"height": 72,
+			"title": "nota_dolezafi_hlaa2026.BuyUnit",
+			"width": 266,
+			"x": 1763,
+			"y": 885
+		},
+		"MVWMq13NA1lNQ1Ds9xAB3DrMRZZCNYpm": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 1569,
+			"y": 16
+		},
+		"PHkytxqatwb1HzuUdOBE8tuPKgRiWGkr": {
+			"height": 91,
+			"title": "luaCondition",
+			"width": 648,
+			"x": 1171,
+			"y": 1196
+		},
+		"Tia46nSsKwBpwhsUXU9yueOLKScWttiS": {
+			"height": 91,
+			"title": "luaCondition",
+			"width": 493,
+			"x": 1168,
+			"y": 982
+		},
+		"Xy2a5ET43sSaMAwbRrJF4FNl5mEkjAOu": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 301,
+			"y": 17
+		},
+		"Z4FhXvhUYP0cg3gS07o6Ny9Zz2NvRx7q": {
+			"height": 72,
+			"title": "nota_dolezafi_hlaa2026.BuyUnit",
+			"width": 266,
+			"x": 1764,
+			"y": 176
+		},
+		"ankLlfV21rpjb8dKFq23ka4v6QQbtpNI": {
+			"height": 72,
+			"title": "nota_dolezafi_hlaa2026.BuyUnit",
+			"width": 266,
+			"x": 1760,
+			"y": 989
+		},
+		"b6XDtZH55XUkUfNxEnhId9Rqk0Okd7UY": {
+			"height": 91,
+			"title": "luaCondition",
+			"width": 475,
+			"x": 1165,
+			"y": 169
+		},
+		"c7dR9fv8kWXMLplGzGb2f6ho4UhmF9Ll": {
+			"height": 72,
+			"title": "nota_dolezafi_hlaa2026.BuyUnit",
+			"width": 266,
+			"x": 1768,
+			"y": 97
+		},
+		"eoHK9mM3aWldNtVx5DDzZikZqpvQ3Pnv": {
+			"height": 72,
+			"title": "nota_dolezafi_hlaa2026.BuyUnit",
+			"width": 266,
+			"x": 1789,
+			"y": 673
+		},
+		"hZxzK5XBFFLIfJNoxZxWTXkUufq2U8zN": {
+			"height": 72,
+			"title": "wait for metal update",
+			"width": 214,
+			"x": 819,
+			"y": 93
+		},
+		"jtmbR573Tt5MADjMi7Dn6bCwFuk6D07f": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 1563,
+			"y": 526
+		},
+		"r9lK9FOkrgFbyEwDZ3uGSMMBeQE8Rk4B": {
+			"height": 91,
+			"title": "luaCondition",
+			"width": 489,
+			"x": 1169,
+			"y": 782
+		},
+		"rr0y3HR2d1PCrt8zgKi8npsUeuHCfHvo": {
+			"height": 91,
+			"title": "luaCondition",
+			"width": 495,
+			"x": 1166,
+			"y": 878
+		},
+		"tSNqjWPDU4abw35PgSeq3RPZ0EsPJvNj": {
+			"height": 72,
+			"title": "nota_dolezafi_hlaa2026.BuyUnit",
+			"width": 266,
+			"x": 1768,
+			"y": 1099
+		},
+		"wf3qUgFJjhCfIDaDD2Z9RYOtaV3uhqyu": {
+			"height": 72,
+			"title": "nota_dolezafi_hlaa2026.BuyUnit",
+			"width": 266,
+			"x": 1767,
+			"y": 426
+		},
+		"xlFNADFgnQW3oleMBWlN5JHiDFLqz1I1": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 592,
+			"y": 17
+		},
+		"ymsw5n9BtSZW0Z8aeBSVGJKuHNIById4": {
+			"height": 74,
+			"title": "waitUntil",
+			"width": 378,
+			"x": 1755,
+			"y": 290
+		},
+		"zKPFJLvHyaQBml39dxEtYOe0f4TivgA0": {
+			"height": 72,
+			"title": "nota_dolezafi_hlaa2026.BuyUnit",
+			"width": 266,
+			"x": 1765,
+			"y": 789
+		},
+		"zrWUC2AVeZdQP7E2OsGTRX5UReovvA9k": {
+			"height": 74,
+			"title": "waitUntil",
+			"width": 380,
+			"x": 1778,
+			"y": 521
+		},
+		"zuJRHG4L96Mi8Rt2806u41SuD4gmcgJF": {
+			"height": 91,
+			"title": "luaCondition",
+			"width": 493,
+			"x": 1172,
+			"y": 1092
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": ""
+	} ],
+	"root": {
+		"children": [ {
+			"children": [ {
+				"children": [ {
+					"children": [ {
+						"children": [ {
+							"children": [],
+							"id": "9C3sVf5Xt3KuPkoTxLjzXinkGcTwzW63",
+							"nodeType": "luaCommand",
+							"parameters": [ {
+								"name": "condition",
+								"value": "GetMetal() >= bb.missionInfo.buy.armseer"
+							}, {
+								"name": "scriptName",
+								"value": "waitUntil"
+							} ],
+							"scriptName": "waitUntil"
+						}, {
+							"children": [],
+							"id": "c7dR9fv8kWXMLplGzGb2f6ho4UhmF9Ll",
+							"nodeType": "luaCommand",
+							"parameters": [ {
+								"name": "unitName",
+								"value": "'armseer'"
+							}, {
+								"name": "scriptName",
+								"value": "nota_dolezafi_hlaa2026.BuyUnit"
+							} ],
+							"scriptName": "nota_dolezafi_hlaa2026.BuyUnit"
+						} ],
+						"id": "MVWMq13NA1lNQ1Ds9xAB3DrMRZZCNYpm",
+						"nodeType": "sequence",
+						"parameters": []
+					} ],
+					"id": "CU1Yot5nwqI1yfW1iEIN0GzUZLXytvGX",
+					"nodeType": "luaCondition",
+					"parameters": [ {
+						"name": "expression",
+						"value": "#bb.units.seers < 1"
+					}, {
+						"name": "repeat",
+						"value": "false"
+					} ]
+				}, {
+					"children": [ {
+						"children": [],
+						"id": "Z4FhXvhUYP0cg3gS07o6Ny9Zz2NvRx7q",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "unitName",
+							"value": "'armfark'"
+						}, {
+							"name": "scriptName",
+							"value": "nota_dolezafi_hlaa2026.BuyUnit"
+						} ],
+						"scriptName": "nota_dolezafi_hlaa2026.BuyUnit"
+					} ],
+					"id": "b6XDtZH55XUkUfNxEnhId9Rqk0Okd7UY",
+					"nodeType": "luaCondition",
+					"parameters": [ {
+						"name": "expression",
+						"value": "#bb.units.farks < 1 and GetMetal() >= bb.missionInfo.buy.armfark"
+					}, {
+						"name": "repeat",
+						"value": "false"
+					} ]
+				}, {
+					"children": [ {
+						"children": [ {
+							"children": [],
+							"id": "ymsw5n9BtSZW0Z8aeBSVGJKuHNIById4",
+							"nodeType": "luaCommand",
+							"parameters": [ {
+								"name": "condition",
+								"value": "GetMetal() >= bb.missionInfo.buy.armbox"
+							}, {
+								"name": "scriptName",
+								"value": "waitUntil"
+							} ],
+							"scriptName": "waitUntil"
+						}, {
+							"children": [],
+							"id": "wf3qUgFJjhCfIDaDD2Z9RYOtaV3uhqyu",
+							"nodeType": "luaCommand",
+							"parameters": [ {
+								"name": "unitName",
+								"value": "'armbox'"
+							}, {
+								"name": "scriptName",
+								"value": "nota_dolezafi_hlaa2026.BuyUnit"
+							} ],
+							"scriptName": "nota_dolezafi_hlaa2026.BuyUnit"
+						} ],
+						"id": "8BUq5lVFYMEmcsBf9Zi7fd9q9AkNslfH",
+						"nodeType": "sequence",
+						"parameters": []
+					} ],
+					"id": "4irfLfH8sVCs8gAmUELApkoha3FMEvJy",
+					"nodeType": "luaCondition",
+					"parameters": [ {
+						"name": "expression",
+						"value": "#bb.units.boxes < 3 "
+					}, {
+						"name": "repeat",
+						"value": "false"
+					} ]
+				}, {
+					"children": [ {
+						"children": [ {
+							"children": [],
+							"id": "zrWUC2AVeZdQP7E2OsGTRX5UReovvA9k",
+							"nodeType": "luaCommand",
+							"parameters": [ {
+								"name": "condition",
+								"value": "GetMetal() >= bb.missionInfo.buy.armatlas"
+							}, {
+								"name": "scriptName",
+								"value": "waitUntil"
+							} ],
+							"scriptName": "waitUntil"
+						}, {
+							"children": [],
+							"id": "eoHK9mM3aWldNtVx5DDzZikZqpvQ3Pnv",
+							"nodeType": "luaCommand",
+							"parameters": [ {
+								"name": "unitName",
+								"value": "'armatlas'"
+							}, {
+								"name": "scriptName",
+								"value": "nota_dolezafi_hlaa2026.BuyUnit"
+							} ],
+							"scriptName": "nota_dolezafi_hlaa2026.BuyUnit"
+						} ],
+						"id": "jtmbR573Tt5MADjMi7Dn6bCwFuk6D07f",
+						"nodeType": "sequence",
+						"parameters": []
+					} ],
+					"id": "GoXz50qofN9vsXryMksDloDo6aC71Qad",
+					"nodeType": "luaCondition",
+					"parameters": [ {
+						"name": "expression",
+						"value": "#bb.units.atlases < 3 "
+					}, {
+						"name": "repeat",
+						"value": "false"
+					} ]
+				}, {
+					"children": [ {
+						"children": [],
+						"id": "K7T0Lxs7Wg79wJkHUDYZwRvIt2vfZZqP",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "unitName",
+							"value": "'armmav'"
+						}, {
+							"name": "scriptName",
+							"value": "nota_dolezafi_hlaa2026.BuyUnit"
+						} ],
+						"scriptName": "nota_dolezafi_hlaa2026.BuyUnit"
+					} ],
+					"id": "rr0y3HR2d1PCrt8zgKi8npsUeuHCfHvo",
+					"nodeType": "luaCondition",
+					"parameters": [ {
+						"name": "expression",
+						"value": "#bb.units.mavericks < 6 and GetMetal() >= bb.missionInfo.buy.armmav"
+					}, {
+						"name": "repeat",
+						"value": "false"
+					} ]
+				}, {
+					"children": [ {
+						"children": [],
+						"id": "ankLlfV21rpjb8dKFq23ka4v6QQbtpNI",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "unitName",
+							"value": "'armmart'"
+						}, {
+							"name": "scriptName",
+							"value": "nota_dolezafi_hlaa2026.BuyUnit"
+						} ],
+						"scriptName": "nota_dolezafi_hlaa2026.BuyUnit"
+					} ],
+					"id": "Tia46nSsKwBpwhsUXU9yueOLKScWttiS",
+					"nodeType": "luaCondition",
+					"parameters": [ {
+						"name": "expression",
+						"value": "#bb.units.lugers < 4 and GetMetal() >= bb.missionInfo.buy.armmart"
+					}, {
+						"name": "repeat",
+						"value": "false"
+					} ]
+				}, {
+					"children": [ {
+						"children": [],
+						"id": "tSNqjWPDU4abw35PgSeq3RPZ0EsPJvNj",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "unitName",
+							"value": "'armmav'"
+						}, {
+							"name": "scriptName",
+							"value": "nota_dolezafi_hlaa2026.BuyUnit"
+						} ],
+						"scriptName": "nota_dolezafi_hlaa2026.BuyUnit"
+					} ],
+					"id": "zuJRHG4L96Mi8Rt2806u41SuD4gmcgJF",
+					"nodeType": "luaCondition",
+					"parameters": [ {
+						"name": "expression",
+						"value": "GetMetal() >= bb.missionInfo.buy.armmav"
+					}, {
+						"name": "repeat",
+						"value": "false"
+					} ]
+				}, {
+					"children": [ {
+						"children": [],
+						"id": "Boule0wJlw7PSS768sK0DpYIgDOJcRYH",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "unitName",
+							"value": "'armfark'"
+						}, {
+							"name": "scriptName",
+							"value": "nota_dolezafi_hlaa2026.BuyUnit"
+						} ],
+						"scriptName": "nota_dolezafi_hlaa2026.BuyUnit"
+					} ],
+					"id": "PHkytxqatwb1HzuUdOBE8tuPKgRiWGkr",
+					"nodeType": "luaCondition",
+					"parameters": [ {
+						"name": "expression",
+						"value": "#bb.units.mavericks >= 3 and #bb.units.farks < 3 and GetMetal() >= bb.missionInfo.buy.armfark"
+					}, {
+						"name": "repeat",
+						"value": "false"
+					} ]
+				} ],
+				"id": "DLWBQEukFuNp8a4cvlj9u81PRjaZQd38",
+				"nodeType": "selector",
+				"parameters": [ {
+					"name": "active",
+					"value": "true"
+				} ]
+			}, {
+				"children": [],
+				"id": "hZxzK5XBFFLIfJNoxZxWTXkUufq2U8zN",
+				"nodeType": "wait",
+				"parameters": [ {
+					"name": "time",
+					"value": 4
+				} ]
+			} ],
+			"id": "xlFNADFgnQW3oleMBWlN5JHiDFLqz1I1",
+			"nodeType": "sequence",
+			"parameters": []
+		} ],
+		"id": "Xy2a5ET43sSaMAwbRrJF4FNl5mEkjAOu",
+		"nodeType": "repeat",
+		"parameters": []
+	}
+}
