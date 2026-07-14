@@ -135,28 +135,55 @@ function Run(self, units, parameter)
 			local targetX = position.x + attackVectorPerp.x * offset
 			local targetZ = position.z + attackVectorPerp.z * offset
 
-            local cmdID = fight and CMD.FIGHT or CMD.MOVE
-			if fight then
+			if fight == "special" then
 				local weaponRange = WeaponDefs[UnitDefs[GetUnitDefID(unitID)].weapons[1].weaponDef].range
-				local enemies = Spring.GetUnitsInSphere(targetX, position.y, targetZ, weaponRange)
+				local searchRange = weaponRange + 500
+				local enemies = Spring.GetUnitsInSphere(targetX, position.y, targetZ, searchRange)
+
+				local bestTarget = nil
+				local bestPriority = math.huge
+				local bestDistance = math.huge
+
 				for i = 1, #enemies do
 					local enemyID = enemies[i]
 					local enemyDefID = GetUnitDefID(enemyID)
 
-					if ValidUnitID(enemyID) 
-					   and not UnitIsDead(enemyID) 
+					if ValidUnitID(enemyID)
+					   and not UnitIsDead(enemyID)
 					   and enemyDefID
 					   and UnitDefs[enemyDefID]
 					   and (UnitDefs[enemyDefID].name == "shika" or UnitDefs[enemyDefID].name == "corvipe")
-					   and GetUnitTeam(enemyID) == bb.missionInfo.battleLines.EvilMiddle.teamID
-					   and (Vec3(GetUnitPosition(enemyID) - GetUnitPosition(unitID))):Length() < weaponRange then
-							GiveOrderToUnit(unitID, CMD.FIRE_STATE, { 0 }, {})
-							GiveOrderToUnit(unitID, CMD.ATTACK, { enemyID }, {})
-							return RUNNING
+					   and GetUnitTeam(enemyID) == bb.missionInfo.battleLines.EvilMiddle.teamID then
+
+						local distance = (Vec3(GetUnitPosition(enemyID) - GetUnitPosition(unitID))):Length()
+
+						if distance < searchRange then
+							local priority = UnitDefs[enemyDefID].name == "shika" and 0 or 1
+
+							if priority < bestPriority or (priority == bestPriority and distance < bestDistance) then
+								bestTarget = enemyID
+								bestPriority = priority
+								bestDistance = distance
+							end
+						end
 					end
 				end
+
+				if bestTarget and bestDistance <= weaponRange then
+					GiveOrderToUnit(unitID, CMD.FIRE_STATE, { 0 }, {})
+					GiveOrderToUnit(unitID, CMD.ATTACK, { bestTarget }, {})
+				elseif bestTarget and bestDistance <= searchRange then
+					local enemyPos = Vec3(GetUnitPosition(bestTarget))
+					GiveOrderToUnit(unitID, CMD.FIRE_STATE, { 0 }, {})
+					GiveOrderToUnit(unitID, CMD.FIGHT, { enemyPos.x, enemyPos.y, enemyPos.z }, {})
+				else
+					GiveOrderToUnit(unitID, CMD.FIRE_STATE, { 2 }, {})
+					GiveOrderToUnit(unitID, CMD.FIGHT, { targetX, position.y, targetZ }, {})
+				end
+
+			elseif fight == "normal" then
 				GiveOrderToUnit(unitID, CMD.FIRE_STATE, { 2 }, {})
-				GiveOrderToUnit(unitID, cmdID, { targetX, position.y, targetZ }, {})
+				GiveOrderToUnit(unitID, CMD.FIGHT, { targetX, position.y, targetZ }, {})
 			else
 				local cmdQueue = Spring.GetCommandQueue(unitID, 1)
 
@@ -168,7 +195,7 @@ function Run(self, units, parameter)
 					CMD.INSERT,
 					{
 						0,                  -- insert at end of queue
-						cmdID,              -- command to insert
+						CMD.MOVE,           -- command to insert
 						0,                  -- inserted command options
 						targetX,
 						position.y,

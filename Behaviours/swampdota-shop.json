@@ -34,8 +34,8 @@
 			"height": 72,
 			"title": "nota_dolezafi_hlaa2026.BuyUnit",
 			"width": 266,
-			"x": 1888,
-			"y": 1203
+			"x": 1883,
+			"y": 1152
 		},
 		"CU1Yot5nwqI1yfW1iEIN0GzUZLXytvGX": {
 			"height": 88,
@@ -55,15 +55,15 @@
 			"height": 88,
 			"title": "luaCondition",
 			"width": 204,
-			"x": 1167,
-			"y": 516
+			"x": 1159,
+			"y": 604
 		},
 		"K7T0Lxs7Wg79wJkHUDYZwRvIt2vfZZqP": {
 			"height": 72,
 			"title": "nota_dolezafi_hlaa2026.BuyUnit",
 			"width": 266,
 			"x": 1763,
-			"y": 885
+			"y": 970
 		},
 		"MVWMq13NA1lNQ1Ds9xAB3DrMRZZCNYpm": {
 			"height": 60,
@@ -76,15 +76,15 @@
 			"height": 91,
 			"title": "luaCondition",
 			"width": 648,
-			"x": 1171,
-			"y": 1196
+			"x": 1166,
+			"y": 1145
 		},
 		"Tia46nSsKwBpwhsUXU9yueOLKScWttiS": {
 			"height": 91,
 			"title": "luaCondition",
 			"width": 493,
 			"x": 1168,
-			"y": 982
+			"y": 870
 		},
 		"Xy2a5ET43sSaMAwbRrJF4FNl5mEkjAOu": {
 			"height": 60,
@@ -105,7 +105,7 @@
 			"title": "nota_dolezafi_hlaa2026.BuyUnit",
 			"width": 266,
 			"x": 1760,
-			"y": 989
+			"y": 877
 		},
 		"b6XDtZH55XUkUfNxEnhId9Rqk0Okd7UY": {
 			"height": 91,
@@ -125,8 +125,8 @@
 			"height": 72,
 			"title": "nota_dolezafi_hlaa2026.BuyUnit",
 			"width": 266,
-			"x": 1789,
-			"y": 673
+			"x": 1781,
+			"y": 761
 		},
 		"hZxzK5XBFFLIfJNoxZxWTXkUufq2U8zN": {
 			"height": 72,
@@ -139,29 +139,29 @@
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 1563,
-			"y": 526
+			"x": 1555,
+			"y": 614
 		},
 		"r9lK9FOkrgFbyEwDZ3uGSMMBeQE8Rk4B": {
 			"height": 91,
 			"title": "luaCondition",
 			"width": 489,
-			"x": 1169,
-			"y": 782
+			"x": 1167,
+			"y": -99
 		},
 		"rr0y3HR2d1PCrt8zgKi8npsUeuHCfHvo": {
 			"height": 91,
 			"title": "luaCondition",
 			"width": 495,
 			"x": 1166,
-			"y": 878
+			"y": 963
 		},
 		"tSNqjWPDU4abw35PgSeq3RPZ0EsPJvNj": {
 			"height": 72,
 			"title": "nota_dolezafi_hlaa2026.BuyUnit",
 			"width": 266,
-			"x": 1768,
-			"y": 1099
+			"x": 1765,
+			"y": 1061
 		},
 		"wf3qUgFJjhCfIDaDD2Z9RYOtaV3uhqyu": {
 			"height": 72,
@@ -188,22 +188,22 @@
 			"height": 72,
 			"title": "nota_dolezafi_hlaa2026.BuyUnit",
 			"width": 266,
-			"x": 1765,
-			"y": 789
+			"x": 1808,
+			"y": -92
 		},
 		"zrWUC2AVeZdQP7E2OsGTRX5UReovvA9k": {
 			"height": 74,
 			"title": "waitUntil",
 			"width": 380,
-			"x": 1778,
-			"y": 521
+			"x": 1770,
+			"y": 609
 		},
 		"zuJRHG4L96Mi8Rt2806u41SuD4gmcgJF": {
 			"height": 91,
 			"title": "luaCondition",
 			"width": 493,
-			"x": 1172,
-			"y": 1092
+			"x": 1169,
+			"y": 1054
 		}
 	},
 	"roles": [ {
@@ -214,6 +214,29 @@
 		"children": [ {
 			"children": [ {
 				"children": [ {
+					"children": [ {
+						"children": [],
+						"id": "zKPFJLvHyaQBml39dxEtYOe0f4TivgA0",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "unitName",
+							"value": "'armspy'"
+						}, {
+							"name": "scriptName",
+							"value": "nota_dolezafi_hlaa2026.BuyUnit"
+						} ],
+						"scriptName": "nota_dolezafi_hlaa2026.BuyUnit"
+					} ],
+					"id": "r9lK9FOkrgFbyEwDZ3uGSMMBeQE8Rk4B",
+					"nodeType": "luaCondition",
+					"parameters": [ {
+						"name": "expression",
+						"value": "#bb.units.infiltrators < 1 and GetMetal() >= bb.missionInfo.buy.armspy"
+					}, {
+						"name": "repeat",
+						"value": "false"
+					} ]
+				}, {
 					"children": [ {
 						"children": [ {
 							"children": [],
@@ -359,22 +382,22 @@
 				}, {
 					"children": [ {
 						"children": [],
-						"id": "zKPFJLvHyaQBml39dxEtYOe0f4TivgA0",
+						"id": "ankLlfV21rpjb8dKFq23ka4v6QQbtpNI",
 						"nodeType": "luaCommand",
 						"parameters": [ {
 							"name": "unitName",
-							"value": "'armspy'"
+							"value": "'armmart'"
 						}, {
 							"name": "scriptName",
 							"value": "nota_dolezafi_hlaa2026.BuyUnit"
 						} ],
 						"scriptName": "nota_dolezafi_hlaa2026.BuyUnit"
 					} ],
-					"id": "r9lK9FOkrgFbyEwDZ3uGSMMBeQE8Rk4B",
+					"id": "Tia46nSsKwBpwhsUXU9yueOLKScWttiS",
 					"nodeType": "luaCondition",
 					"parameters": [ {
 						"name": "expression",
-						"value": "#bb.units.infiltrators < 1 and GetMetal() >= bb.missionInfo.buy.armspy"
+						"value": "#bb.units.lugers < 6 and GetMetal() >= bb.missionInfo.buy.armmart"
 					}, {
 						"name": "repeat",
 						"value": "false"
@@ -398,29 +421,6 @@
 					"parameters": [ {
 						"name": "expression",
 						"value": "#bb.units.mavericks < 6 and GetMetal() >= bb.missionInfo.buy.armmav"
-					}, {
-						"name": "repeat",
-						"value": "false"
-					} ]
-				}, {
-					"children": [ {
-						"children": [],
-						"id": "ankLlfV21rpjb8dKFq23ka4v6QQbtpNI",
-						"nodeType": "luaCommand",
-						"parameters": [ {
-							"name": "unitName",
-							"value": "'armmart'"
-						}, {
-							"name": "scriptName",
-							"value": "nota_dolezafi_hlaa2026.BuyUnit"
-						} ],
-						"scriptName": "nota_dolezafi_hlaa2026.BuyUnit"
-					} ],
-					"id": "Tia46nSsKwBpwhsUXU9yueOLKScWttiS",
-					"nodeType": "luaCondition",
-					"parameters": [ {
-						"name": "expression",
-						"value": "#bb.units.lugers < 4 and GetMetal() >= bb.missionInfo.buy.armmart"
 					}, {
 						"name": "repeat",
 						"value": "false"

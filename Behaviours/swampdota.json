@@ -20,126 +20,133 @@
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 3106,
+			"x": 3107,
 			"y": 101
 		},
 		"1Fi1xHqcz7KZQ8fRRPeYJx9U8wPYtdMI": {
 			"height": 60,
 			"title": "box1",
 			"width": 131,
-			"x": 2475,
+			"x": 2472,
 			"y": 101
 		},
 		"210WUGG9LjFzzbN1qNO8lZ14833PACs6": {
 			"height": 94,
 			"title": "store - Corridors as arrays of positions",
 			"width": 506,
-			"x": 876,
+			"x": 879,
 			"y": -940
 		},
 		"281K6LrkkmGqLLcnBOu2z37yvEcb8zZu": {
 			"height": 94,
 			"title": "store",
 			"width": 198,
-			"x": 877,
+			"x": 880,
 			"y": -1030
 		},
 		"4BCdAipI8ucp4FxiaEVq8jnjXBTVAumN": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 347,
-			"x": 2687,
+			"x": 2685,
 			"y": 542
 		},
 		"5iaYjFVg7M8Jh106034xW2nhRu7EqhyG": {
 			"height": 94,
 			"title": "store - Get current units' status",
 			"width": 487,
-			"x": 2362,
+			"x": 2360,
 			"y": -1935
 		},
 		"6iRnBGqariNnhDKb6s6i39SNXJd7o21H": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 347,
-			"x": 2698,
+			"x": 2696,
 			"y": 90
 		},
 		"91d69cZMz4kHnJDlzmfpoPsTCMKBP4cO": {
 			"height": 172,
 			"title": "nota_dolezafi_hlaa2026.MoveUnitsToFrontline",
 			"width": 357,
-			"x": 2650,
+			"x": 2647,
 			"y": -628
 		},
 		"9pPDIoX9jMq24d45kbi78lb5e9Ijvf0l": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 405,
-			"x": 2144,
+			"x": 2142,
 			"y": -269
 		},
 		"AEDk3TU16ev3SHDcYXk9O8NMD2czGGSw": {
 			"height": 95,
 			"title": "store",
 			"width": 275,
-			"x": 872,
+			"x": 875,
 			"y": -571
 		},
 		"ATdZB0AiJwSjTDc2PbiRNOHv97HcCpZF": {
 			"height": 94,
 			"title": "store",
 			"width": 1177,
-			"x": 2359,
+			"x": 2357,
 			"y": -1756
 		},
 		"ArXHAgyTdZvIBEYegYn3oLGrdRqq9L4N": {
 			"height": 70,
 			"title": "parallel",
 			"width": 202,
-			"x": 2203,
+			"x": 2201,
 			"y": 97
+		},
+		"B0cTSD2UbDmZ49F7gnLpx7EjRgAwZft6": {
+			"height": 172,
+			"title": "nota_dolezafi_hlaa2026.MoveUnitsToFrontline",
+			"width": 357,
+			"x": 3224,
+			"y": -539
 		},
 		"BBCBLN0FHatC82o7c0i3jarsuEjCaQfP": {
 			"height": 92,
 			"title": "store - Units divided into categories + their status",
 			"width": 880,
-			"x": 879,
+			"x": 882,
 			"y": -1208
 		},
 		"CuAJ0tirFMuDn1XukTsUJppyrdP5EzPZ": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 2357,
+			"x": 2355,
 			"y": -589
 		},
 		"D7Gj6fYP3MCeYifM3PrkqmHwisftp4av": {
 			"height": 94,
 			"title": "store",
 			"width": 401,
-			"x": 872,
+			"x": 875,
 			"y": -671
 		},
 		"HfSuIrMIW0KNRvwIszMYW0GgnM8FCsrS": {
 			"height": 94,
 			"title": "store - Count units of several categories",
 			"width": 338,
-			"x": 2361,
+			"x": 2359,
 			"y": -1846
 		},
 		"IkwuxqwLxRWl8gJscH3P0v0EmuYFDubt": {
 			"height": 60,
 			"title": "farks",
 			"width": 131,
-			"x": 1943,
+			"x": 1942,
 			"y": -813
 		},
 		"Jgcf08sWRqdCTw4f6eNS3rxQEOFu1iMm": {
 			"height": 60,
 			"title": "box3",
 			"width": 131,
-			"x": 2490,
+			"x": 2487,
 			"y": 967
 		},
 		"KIV5BkQePrMxFy9tPmQakvqIOy0VavjV": {
@@ -153,42 +160,35 @@
 			"height": 88,
 			"title": "luaCondition",
 			"width": 202,
-			"x": 2124,
+			"x": 2123,
 			"y": -823
 		},
 		"Ni1ZzVuzzOJwQdeK2qUTTXrJPsEPwA6u": {
 			"height": 60,
 			"title": "box2",
 			"width": 131,
-			"x": 2480,
+			"x": 2477,
 			"y": 553
-		},
-		"OAnZRLgsbpUei5cyoJWw2AknuDF8M0ed": {
-			"height": 112,
-			"title": "nota_michelle_intro.moveUnit",
-			"width": 335,
-			"x": 2679,
-			"y": -165
 		},
 		"P2l3heOia8v4s7GJWUI9MbknAiBkwkPV": {
 			"height": 60,
 			"title": "seers",
 			"width": 131,
-			"x": 1943,
+			"x": 1942,
 			"y": -258
 		},
 		"R6OwWjZR0ukkY2z8jItwbS2KDnZatOfx": {
 			"height": 112,
 			"title": "nota_dolezafi_hlaa2026.Reclaim",
-			"width": 465,
-			"x": 2643,
+			"width": 486,
+			"x": 2640,
 			"y": -1000
 		},
 		"R8loywP7kJl2SznepffxRwH9Qcze7Hcv": {
 			"height": 92,
 			"title": "store - Counts of different groups of units",
 			"width": 786,
-			"x": 879,
+			"x": 882,
 			"y": -1118
 		},
 		"SdFU1CjnwggIiEQYr44bESO3Nx1rclv9": {
@@ -209,7 +209,7 @@
 			"height": 94,
 			"title": "store",
 			"width": 824,
-			"x": 869,
+			"x": 872,
 			"y": -472
 		},
 		"VTfEUu0Wlj3GfpoL8yfivUCfXNCIKii9": {
@@ -219,60 +219,67 @@
 			"x": 3340,
 			"y": 1053
 		},
+		"VkM5EDEzYyboXnifg3aP71uC87jfpgGQ": {
+			"height": 172,
+			"title": "nota_dolezafi_hlaa2026.MoveUnitsToFrontline",
+			"width": 357,
+			"x": 2645,
+			"y": -125
+		},
 		"VyA8RkqNGCxmarDpsmujtQj9mJniWpCl": {
 			"height": 60,
 			"title": "boxes",
 			"width": 143,
-			"x": 1961,
+			"x": 1960,
 			"y": 16
 		},
 		"Ws0BWO8KryKMVSOl74ym6YOnjizSRLp9": {
 			"height": 92,
 			"title": "store",
 			"width": 734,
-			"x": 876,
+			"x": 879,
 			"y": -851
 		},
 		"XOECElQ7ZJzWflCLXyCXEZtUoE7u4yJT": {
 			"height": 94,
 			"title": "store",
 			"width": 401,
-			"x": 2651,
+			"x": 2648,
 			"y": -1424
 		},
 		"XdXC7Cm2IDtlrZgMkOdV9A4q4coffnQt": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 380,
+			"x": 384,
 			"y": 17
 		},
 		"XnVOlsNHOXArlNsgADtvMma9fG4nT5OA": {
 			"height": 60,
 			"title": "spy",
 			"width": 131,
-			"x": 1949,
-			"y": -147
+			"x": 1951,
+			"y": -86
 		},
 		"Z6GxvjrWFE3Vj4QoubSKQw0UEg3Pk18I": {
 			"height": 60,
 			"title": "lugers",
 			"width": 131,
-			"x": 1944,
+			"x": 1943,
 			"y": -589
 		},
 		"bZb2RLQWXD0HqxOrOr6VnxN8inXQhh9P": {
 			"height": 172,
 			"title": "nota_dolezafi_hlaa2026.MoveUnitsToFrontline",
 			"width": 357,
-			"x": 2641,
+			"x": 2638,
 			"y": -803
 		},
 		"cjGeLL56tq4fWXzqi9kAWEr5nBLzgILO": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 347,
-			"x": 2696,
+			"x": 2694,
 			"y": 956
 		},
 		"ctjXlfMCT8ymPSxf1gDs2R2iL8sHtnXY": {
@@ -282,47 +289,54 @@
 			"x": 3331,
 			"y": 753
 		},
-		"d3aMbhk5WM0X7blnb8ACJgdAqPdEJbGq": {
-			"height": 112,
-			"title": "nota_michelle_intro.moveUnit",
-			"width": 316,
-			"x": 2683,
-			"y": -276
+		"d66XrwgRJkTD5e6FGo49llb6QcRNpbNl": {
+			"height": 172,
+			"title": "nota_dolezafi_hlaa2026.MoveUnitsToFrontline",
+			"width": 357,
+			"x": 2644,
+			"y": -297
 		},
 		"duuypnin7VEGx0wza34ibjPiRBH3GiUp": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 3095,
+			"x": 3096,
 			"y": 553
 		},
 		"e8zuMYNU5zJgKPYZ6e9X27N8aFIuazfu": {
 			"height": 110,
 			"title": "reference",
 			"width": 342,
-			"x": 1934,
+			"x": 1933,
 			"y": -1670
 		},
 		"fi43zRgma2j9xpPCkPjLAnbOJem8Lqb2": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 2356,
+			"x": 2354,
 			"y": -813
 		},
 		"gQVLZDkVYrlGYdOOuI5Pzify0ju4531f": {
 			"height": 112,
 			"title": "nota_dolezafi_hlaa2026.Reclaim",
-			"width": 314,
-			"x": 2647,
+			"width": 334,
+			"x": 2644,
 			"y": -1331
+		},
+		"hXQ0FOUPxa4eFPXZjFAn6RzKWyzl4CI0": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 194,
+			"x": 2954,
+			"y": -429
 		},
 		"jZQNzgRdHarOfyfoRxgt6Fp7Rt04aEqB": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 452,
-			"x": 2145,
-			"y": -158
+			"x": 2142,
+			"y": -97
 		},
 		"jt9gWX5ALyocqBRafRjKiZFpxSNjdHut": {
 			"height": 70,
@@ -335,98 +349,98 @@
 			"height": 172,
 			"title": "nota_dolezafi_hlaa2026.MoveUnitsToFrontline",
 			"width": 357,
-			"x": 2647,
-			"y": -457
+			"x": 3220,
+			"y": -356
 		},
 		"kU2x3EohSTYqiwjmNvxZkHG1TZOAwGsb": {
 			"height": 74,
 			"title": "waitUntil",
-			"width": 1218,
-			"x": 2641,
+			"width": 218,
+			"x": 2638,
 			"y": -880
 		},
 		"mj1rnPPZPCQ49MnECLpUz7ljgR9auOff": {
 			"height": 60,
 			"title": "mavericks",
 			"width": 145,
-			"x": 1943,
+			"x": 1942,
 			"y": -418
 		},
 		"mqQiAX5COySex6PgZqsqLoMrKhG2gqA0": {
 			"height": 60,
 			"title": "sensors",
 			"width": 131,
-			"x": 1979,
+			"x": 1978,
 			"y": -2014
 		},
 		"nnaJCfWlGBQYQqOKJDh64e0dK3JmDz8S": {
 			"height": 112,
 			"title": "nota_dolezafi_hlaa2026.Reclaim",
-			"width": 469,
-			"x": 2645,
+			"width": 489,
+			"x": 2642,
 			"y": -1109
 		},
 		"nv9qxXbmEKZVB9eXSnZMmDpJXYI4WNiU": {
 			"height": 60,
 			"title": "init",
 			"width": 143,
-			"x": 647,
+			"x": 651,
 			"y": -1195
 		},
 		"oSJoNKgAnZOdo1kjM8ZGoFJgQUCpTIje": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 2170,
+			"x": 2168,
 			"y": -2014
 		},
 		"pzIqqUCEG6m97FCyc1smXKvMWoYsMB10": {
 			"height": 112,
 			"title": "nota_dolezafi_hlaa2026.Reclaim",
-			"width": 306,
-			"x": 2646,
+			"width": 326,
+			"x": 2643,
 			"y": -1222
 		},
 		"sFRu8ty6F4GwfSnKpkIYR1q9USjc3kgS": {
 			"height": 94,
 			"title": "store",
 			"width": 282,
-			"x": 873,
+			"x": 876,
 			"y": -761
 		},
 		"snsOXCM0auFK8VFQtm1n0zp5N1Lp7KYh": {
 			"height": 95,
 			"title": "store",
 			"width": 275,
-			"x": 869,
+			"x": 872,
 			"y": -375
 		},
 		"t8Tg9atYuCxfc8joQiBWABqIZcAfVbdi": {
 			"height": 88,
 			"title": "luaCondition",
 			"width": 202,
-			"x": 2125,
+			"x": 2124,
 			"y": -599
 		},
 		"w0LWdbG59Ptdyuvkt58SFGB1fAIZoijv": {
 			"height": 88,
 			"title": "luaCondition",
 			"width": 202,
-			"x": 2124,
+			"x": 2123,
 			"y": -428
 		},
 		"wZFG7ZIeVNInuFYNHsvIrwX0i568JqO8": {
 			"height": 94,
 			"title": "store",
 			"width": 198,
-			"x": 2363,
+			"x": 2361,
 			"y": -2026
 		},
 		"xFjdXUfXc409s5KZt2RQbNe0caViyj60": {
 			"height": 72,
 			"title": "wait",
 			"width": 131,
-			"x": 2201,
+			"x": 2199,
 			"y": 12
 		},
 		"xT9tvjJucFptxAizgXZuUsgjLfPBq8er": {
@@ -440,14 +454,14 @@
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 3104,
+			"x": 3105,
 			"y": 967
 		},
 		"y1A5gopiZ3mB8IS7FtjyqT34Ixy71ODR": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 2356,
+			"x": 2364,
 			"y": -418
 		},
 		"z3DuxxFOwaWVWL3oKfupC5WcEjRlPeRF": {
@@ -615,7 +629,7 @@
 					"value": "boxesOffset"
 				}, {
 					"name": "value",
-					"value": "350"
+					"value": "400"
 				}, {
 					"name": "scriptName",
 					"value": "store"
@@ -715,7 +729,7 @@
 							"nodeType": "luaCommand",
 							"parameters": [ {
 								"name": "var",
-								"value": "tempFrontline"
+								"value": "bb.tempFrontline"
 							}, {
 								"name": "value",
 								"value": "Vec3(bb.frontline.x, bb.frontline.y, bb.frontline.z)"
@@ -733,7 +747,7 @@
 								"value": "bb.units.farks"
 							}, {
 								"name": "center",
-								"value": "tempFrontline - attackVector * 1750"
+								"value": "bb.tempFrontline - attackVector * 1750"
 							}, {
 								"name": "radius",
 								"value": "1500"
@@ -751,7 +765,7 @@
 								"value": "bb.units.farks"
 							}, {
 								"name": "center",
-								"value": "tempFrontline - attackVector * 400"
+								"value": "bb.tempFrontline - attackVector * 400"
 							}, {
 								"name": "radius",
 								"value": "200"
@@ -769,7 +783,7 @@
 								"value": "bb.units.farks"
 							}, {
 								"name": "center",
-								"value": "tempFrontline - attackVector * 400 + attackVectorPerp * 400"
+								"value": "bb.tempFrontline - attackVector * 400 + attackVectorPerp * 400"
 							}, {
 								"name": "radius",
 								"value": "200"
@@ -787,7 +801,7 @@
 								"value": "bb.units.farks"
 							}, {
 								"name": "center",
-								"value": "tempFrontline - attackVector * 400 - attackVectorPerp * 400"
+								"value": "bb.tempFrontline - attackVector * 400 - attackVectorPerp * 400"
 							}, {
 								"name": "radius",
 								"value": "200"
@@ -802,7 +816,7 @@
 							"nodeType": "luaCommand",
 							"parameters": [ {
 								"name": "condition",
-								"value": "(tempFrontline - bb.frontline):Length() > 200 and (tempFrontline - bb.frontline):Length() <  0 or bb.units.farks[1] ~= nil and #Spring.GetCommandQueue(bb.units.farks[1], 1) < 1"
+								"value": "GetFarkMove()"
 							}, {
 								"name": "scriptName",
 								"value": "waitUntil"
@@ -823,7 +837,7 @@
 								"value": "attackVectorPerp"
 							}, {
 								"name": "fight",
-								"value": "false"
+								"value": "\"false\""
 							}, {
 								"name": "tolerance",
 								"value": "150"
@@ -865,16 +879,16 @@
 								"value": "bb.units.lugers"
 							}, {
 								"name": "frontline",
-								"value": "bb.frontline"
+								"value": "bb.frontline - attackVector * 400"
 							}, {
 								"name": "attack_perp_vector",
 								"value": "attackVectorPerp"
 							}, {
 								"name": "fight",
-								"value": "true"
+								"value": "\"special\""
 							}, {
 								"name": "tolerance",
-								"value": "50"
+								"value": "200"
 							}, {
 								"name": "spacing",
 								"value": "100"
@@ -905,32 +919,70 @@
 				"children": [ {
 					"children": [ {
 						"children": [ {
-							"children": [],
-							"id": "k1UoJbyf3F7rzSgo7hbFclT3fThPvu4y",
-							"nodeType": "luaCommand",
-							"parameters": [ {
-								"name": "units",
-								"value": "bb.units.mavericks"
+							"children": [ {
+								"children": [],
+								"id": "B0cTSD2UbDmZ49F7gnLpx7EjRgAwZft6",
+								"nodeType": "luaCommand",
+								"parameters": [ {
+									"name": "units",
+									"value": "bb.units.mavericks"
+								}, {
+									"name": "frontline",
+									"value": "bb.frontline - attackVector * 200 "
+								}, {
+									"name": "attack_perp_vector",
+									"value": "attackVectorPerp"
+								}, {
+									"name": "fight",
+									"value": "\"normal\""
+								}, {
+									"name": "tolerance",
+									"value": "100"
+								}, {
+									"name": "spacing",
+									"value": "100"
+								}, {
+									"name": "scriptName",
+									"value": "nota_dolezafi_hlaa2026.MoveUnitsToFrontline"
+								} ],
+								"scriptName": "nota_dolezafi_hlaa2026.MoveUnitsToFrontline"
 							}, {
-								"name": "frontline",
-								"value": "bb.frontline - attackVector * 200 "
-							}, {
-								"name": "attack_perp_vector",
-								"value": "attackVectorPerp"
-							}, {
-								"name": "fight",
-								"value": "true"
-							}, {
-								"name": "tolerance",
-								"value": "100"
-							}, {
-								"name": "spacing",
-								"value": "100"
-							}, {
-								"name": "scriptName",
-								"value": "nota_dolezafi_hlaa2026.MoveUnitsToFrontline"
+								"children": [],
+								"id": "k1UoJbyf3F7rzSgo7hbFclT3fThPvu4y",
+								"nodeType": "luaCommand",
+								"parameters": [ {
+									"name": "units",
+									"value": "bb.units.mavericks"
+								}, {
+									"name": "frontline",
+									"value": "bb.frontline"
+								}, {
+									"name": "attack_perp_vector",
+									"value": "attackVectorPerp"
+								}, {
+									"name": "fight",
+									"value": "\"special\""
+								}, {
+									"name": "tolerance",
+									"value": "100"
+								}, {
+									"name": "spacing",
+									"value": "100"
+								}, {
+									"name": "scriptName",
+									"value": "nota_dolezafi_hlaa2026.MoveUnitsToFrontline"
+								} ],
+								"scriptName": "nota_dolezafi_hlaa2026.MoveUnitsToFrontline"
 							} ],
-							"scriptName": "nota_dolezafi_hlaa2026.MoveUnitsToFrontline"
+							"id": "hXQ0FOUPxa4eFPXZjFAn6RzKWyzl4CI0",
+							"nodeType": "luaCondition",
+							"parameters": [ {
+								"name": "expression",
+								"value": "#bb.units.mavericks < 5"
+							}, {
+								"name": "repeat",
+								"value": "false"
+							} ]
 						} ],
 						"id": "y1A5gopiZ3mB8IS7FtjyqT34Ixy71ODR",
 						"nodeType": "sequence",
@@ -953,22 +1005,31 @@
 				"children": [ {
 					"children": [ {
 						"children": [],
-						"id": "d3aMbhk5WM0X7blnb8ACJgdAqPdEJbGq",
+						"id": "d66XrwgRJkTD5e6FGo49llb6QcRNpbNl",
 						"nodeType": "luaCommand",
 						"parameters": [ {
-							"name": "assigned_unit",
-							"value": "bb.units.seers[1]"
+							"name": "units",
+							"value": "bb.units.seers"
 						}, {
-							"name": "position",
+							"name": "frontline",
 							"value": "bb.frontline - attackVector * 1000"
+						}, {
+							"name": "attack_perp_vector",
+							"value": "attackVectorPerp"
+						}, {
+							"name": "fight",
+							"value": "\"false\""
 						}, {
 							"name": "tolerance",
 							"value": "50"
 						}, {
+							"name": "spacing",
+							"value": "100"
+						}, {
 							"name": "scriptName",
-							"value": "nota_michelle_intro.moveUnit"
+							"value": "nota_dolezafi_hlaa2026.MoveUnitsToFrontline"
 						} ],
-						"scriptName": "nota_michelle_intro.moveUnit"
+						"scriptName": "nota_dolezafi_hlaa2026.MoveUnitsToFrontline"
 					} ],
 					"id": "9pPDIoX9jMq24d45kbi78lb5e9Ijvf0l",
 					"nodeType": "luaCondition",
@@ -987,22 +1048,31 @@
 				"children": [ {
 					"children": [ {
 						"children": [],
-						"id": "OAnZRLgsbpUei5cyoJWw2AknuDF8M0ed",
+						"id": "VkM5EDEzYyboXnifg3aP71uC87jfpgGQ",
 						"nodeType": "luaCommand",
 						"parameters": [ {
-							"name": "assigned_unit",
-							"value": "bb.units.infiltrators[1]"
+							"name": "units",
+							"value": "bb.units.infiltrators"
 						}, {
-							"name": "position",
-							"value": "bb.frontline + attackVector * 1000"
+							"name": "frontline",
+							"value": "bb.frontline + attackVector * 1100"
+						}, {
+							"name": "attack_perp_vector",
+							"value": "attackVectorPerp"
+						}, {
+							"name": "fight",
+							"value": "\"false\""
 						}, {
 							"name": "tolerance",
 							"value": "50"
 						}, {
+							"name": "spacing",
+							"value": "100"
+						}, {
 							"name": "scriptName",
-							"value": "nota_michelle_intro.moveUnit"
+							"value": "nota_dolezafi_hlaa2026.MoveUnitsToFrontline"
 						} ],
-						"scriptName": "nota_michelle_intro.moveUnit"
+						"scriptName": "nota_dolezafi_hlaa2026.MoveUnitsToFrontline"
 					} ],
 					"id": "jZQNzgRdHarOfyfoRxgt6Fp7Rt04aEqB",
 					"nodeType": "luaCondition",
