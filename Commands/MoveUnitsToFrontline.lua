@@ -54,6 +54,9 @@ end
 local UnitIsDead = Spring.GetUnitIsDead
 local GetUnitPosition = Spring.GetUnitPosition
 local GiveOrderToUnit = Spring.GiveOrderToUnit
+local GetUnitDefID = Spring.GetUnitDefID
+local GetUnitTeam = Spring.GetUnitTeam
+local ValidUnitID = Spring.ValidUnitID
 
 function Run(self, units, parameter)
 	local unitList = parameter.units
@@ -62,6 +65,7 @@ function Run(self, units, parameter)
 	local attackVectorPerp = parameter.attack_perp_vector
 	local spacing = parameter.spacing
 	local fight = parameter.fight
+	local enemyUnits = Sensors.core.EnemyUnits()
 
 	if type(unitList) ~= "table" then
 		unitList = { unitList }
@@ -81,7 +85,7 @@ function Run(self, units, parameter)
 		local unitID = unitList[i]
 
 		if not self.initialized[unitID] then
-			if not Spring.ValidUnitID(unitID) then
+			if not ValidUnitID(unitID) then
 				return FAILURE
 			end
 
@@ -132,7 +136,47 @@ function Run(self, units, parameter)
 			local targetZ = position.z + attackVectorPerp.z * offset
 
             local cmdID = fight and CMD.FIGHT or CMD.MOVE
-			GiveOrderToUnit(unitID, cmdID, { targetX, position.y, targetZ }, {})
+			if fight then
+				local weaponRange = WeaponDefs[UnitDefs[GetUnitDefID(unitID)].weapons[1].weaponDef].range
+				local enemies = Spring.GetUnitsInSphere(targetX, position.y, targetZ, weaponRange)
+				for i = 1, #enemies do
+					local enemyID = enemies[i]
+					local enemyDefID = GetUnitDefID(enemyID)
+
+					if ValidUnitID(enemyID) 
+					   and not UnitIsDead(enemyID) 
+					   and enemyDefID
+					   and UnitDefs[enemyDefID]
+					   and (UnitDefs[enemyDefID].name == "shika" or UnitDefs[enemyDefID].name == "corvipe")
+					   and GetUnitTeam(enemyID) == bb.missionInfo.battleLines.EvilMiddle.teamID
+					   and (Vec3(GetUnitPosition(enemyID) - GetUnitPosition(unitID))):Length() < weaponRange then
+							GiveOrderToUnit(unitID, CMD.FIRE_STATE, { 0 }, {})
+							GiveOrderToUnit(unitID, CMD.ATTACK, { enemyID }, {})
+							return RUNNING
+					end
+				end
+				GiveOrderToUnit(unitID, CMD.FIRE_STATE, { 2 }, {})
+				GiveOrderToUnit(unitID, cmdID, { targetX, position.y, targetZ }, {})
+			else
+				local cmdQueue = Spring.GetCommandQueue(unitID, 1)
+
+				if cmdQueue and #cmdQueue > 0 and cmdQueue[1].id == CMD.MOVE then
+					Spring.GiveOrderToUnit(unitID, CMD.REMOVE, { cmdQueue[1].tag }, {})
+				end
+				Spring.GiveOrderToUnit(
+					unitID,
+					CMD.INSERT,
+					{
+						0,                  -- insert at end of queue
+						cmdID,              -- command to insert
+						0,                  -- inserted command options
+						targetX,
+						position.y,
+						targetZ
+					},
+					{ "alt" }              
+				)
+			end
 		end
 	end
 

@@ -1,28 +1,5 @@
 {
-	"additionalNodes": [ {
-		"children": [ {
-			"children": [],
-			"id": "zKPFJLvHyaQBml39dxEtYOe0f4TivgA0",
-			"nodeType": "luaCommand",
-			"parameters": [ {
-				"name": "unitName",
-				"value": "'armspy'"
-			}, {
-				"name": "scriptName",
-				"value": "nota_dolezafi_hlaa2026.BuyUnit"
-			} ],
-			"scriptName": "nota_dolezafi_hlaa2026.BuyUnit"
-		} ],
-		"id": "r9lK9FOkrgFbyEwDZ3uGSMMBeQE8Rk4B",
-		"nodeType": "luaCondition",
-		"parameters": [ {
-			"name": "expression",
-			"value": "#bb.units.infiltrators < 1 and GetMetal() >= bb.missionInfo.buy.armspy"
-		}, {
-			"name": "repeat",
-			"value": "false"
-		} ]
-	} ],
+	"additionalNodes": [],
 	"additionalParameters": {
 		"root": {
 			"height": 108,
@@ -375,6 +352,29 @@
 					"parameters": [ {
 						"name": "expression",
 						"value": "#bb.units.atlases < 3 "
+					}, {
+						"name": "repeat",
+						"value": "false"
+					} ]
+				}, {
+					"children": [ {
+						"children": [],
+						"id": "zKPFJLvHyaQBml39dxEtYOe0f4TivgA0",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "unitName",
+							"value": "'armspy'"
+						}, {
+							"name": "scriptName",
+							"value": "nota_dolezafi_hlaa2026.BuyUnit"
+						} ],
+						"scriptName": "nota_dolezafi_hlaa2026.BuyUnit"
+					} ],
+					"id": "r9lK9FOkrgFbyEwDZ3uGSMMBeQE8Rk4B",
+					"nodeType": "luaCondition",
+					"parameters": [ {
+						"name": "expression",
+						"value": "#bb.units.infiltrators < 1 and GetMetal() >= bb.missionInfo.buy.armspy"
 					}, {
 						"name": "repeat",
 						"value": "false"

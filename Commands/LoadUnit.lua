@@ -40,7 +40,7 @@ function Run(self, units, parameter)
 	local target = parameter.unit
 
 	if IsInvalid(carrier) or IsInvalid(target) then
-		Logger.warn("nota_dolezafi_hlaa.LoadUnit", "Transport or rescuee is not valid unit")
+		-- Logger.warn("nota_dolezafi_hlaa.LoadUnit", "Transport or rescuee is not valid unit")
 		return FAILURE
 	end
 
@@ -48,13 +48,13 @@ function Run(self, units, parameter)
 		-- make sure carrier is actually a transport-type unit
 		local def = GetUnitDefID(carrier)
 		if def and UnitDefs[def] and not UnitDefs[def].isTransport then
-			Logger.warn("nota_dolezafi_hlaa.LoadUnit", "Carrier is not transport type unit")
+			-- Logger.warn("nota_dolezafi_hlaa.LoadUnit", "Carrier is not transport type unit")
 			return FAILURE
 		end
 		
 		-- unit should not be already being transported
 		if GetUnitTransporter(target) ~= nil then
-			Logger.warn("nota_dolezafi_hlaa.LoadUnit", "Unit is already being transported")
+			--  Logger.warn("nota_dolezafi_hlaa.LoadUnit", "Unit is already being transported")
 			return FAILURE
 		end
 		
@@ -63,7 +63,7 @@ function Run(self, units, parameter)
 	end
 	
 	if IsDead(carrier) then
-		Logger.warn("nota_dolezafi_hlaa.LoadUnit", "Transporter or rescuee is dead")
+		-- Logger.warn("nota_dolezafi_hlaa.LoadUnit", "Transporter or rescuee is dead")
 		bb.transporters[carrier].state = "dead"
 		bb.rescuees[target] = "dead"
 		return FAILURE

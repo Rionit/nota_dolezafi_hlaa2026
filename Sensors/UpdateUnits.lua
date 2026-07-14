@@ -75,7 +75,7 @@ return function(unitsGroups)
             elseif name == "armmart" then
                 unitsGroups.lugers[#unitsGroups.lugers+1] = unitID
                 unitsGroups.status[unitID] = "spawned"
-                GiveOrderToUnit(unitID, CMD.MOVE_STATE, {2}, {})
+                GiveOrderToUnit(unitID, CMD.MOVE_STATE, {0}, {})
             elseif name == "armmav" then
                 unitsGroups.mavericks[#unitsGroups.mavericks+1] = unitID
                 unitsGroups.status[unitID] = "spawned"
@@ -86,7 +86,7 @@ return function(unitsGroups)
             elseif name == "armbox" then
                 unitsGroups.boxes[#unitsGroups.boxes+1] = unitID
                 unitsGroups.status[unitID] = "spawned"
-                GiveOrderToUnit(unitID, CMD.MOVE_STATE, {2}, {})
+                GiveOrderToUnit(unitID, CMD.MOVE_STATE, {0}, {})
             elseif name == "armseer" then
                 unitsGroups.seers[#unitsGroups.seers+1] = unitID
                 unitsGroups.status[unitID] = "spawned"

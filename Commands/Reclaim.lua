@@ -47,10 +47,10 @@ function Run(self, units, parameter)
 	if GetCorpses(center, radius) == 0 then 
 		return SUCCESS
 	end
-	
+
 	for i = 1, #units do
-		Spring.GiveOrderToUnit(units[i], CMD.RECLAIM, {center.x, center.y, center.z, radius}, {})
+		Spring.GiveOrderToUnit(units[i], CMD.RECLAIM, {center.x, center.y, center.z, radius}, { "shift" })
 	end
 
-	return RUNNING
+	return SUCCESS
 end
