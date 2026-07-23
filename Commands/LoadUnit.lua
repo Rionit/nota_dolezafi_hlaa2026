@@ -69,8 +69,12 @@ function Run(self, units, parameter)
 		return FAILURE
 	end
 	
-	if Spring.GetUnitTransporter(target) ~= nil then
+	local unitTransporter = Spring.GetUnitTransporter(target) 
+
+	if unitTransporter ~= nil and unitTransporter == carrier then
 		return SUCCESS
+	elseif unitTransporter ~= nil and unitTransporter ~= carrier then
+		return FAILURE
 	end
 
 	return RUNNING
